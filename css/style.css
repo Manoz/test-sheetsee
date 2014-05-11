@@ -1,1 +1,13 @@
-/* Put your CSS here */
+#Pagination {background: #eee;}
+.pagination-next, .pagination-pre {cursor: pointer;}
+.no-pag {color: #acacac;}
+
+.tHeader {
+  cursor: pointer;
+}
+
+.tHeader::after {
+  content: " \25BC";
+  font-size: 10px;
+  padding-left: 3px;
+}

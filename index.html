@@ -10,10 +10,31 @@
   <body>
     <!-- HTML -->
     <div id="placeholder"></div>
+    <div id="table"></div>
+    <input id="table-filter" type="text"></input>
 
     <!-- Templates -->
     <script id="placeholder" type="text/html">
       // template HTML here
+    </script>
+    
+    <script text="text/javascript" id="table-templ">
+      <table>
+        <th>
+          <tr>
+            <td class="tHeader">COLUMN HEADER</td>
+            <td class="tHeader">COLUMN HEADER</td>
+            <td class="tHeader">COLUMN HEADER</td>
+          </tr>
+        </th>
+        <tbody>
+          <tr>
+            <td>{{A}}</td>
+            <td>{{B}}</td>
+            <td>{{C}}</td>
+          </tr>
+        </tbody>
+      </table>
     </script>
 
     <!-- JavaScript -->

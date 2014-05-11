@@ -44,7 +44,15 @@
           Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
       })
       function myData(data) {
-          All the sheetsee things you want to do!
+        var tableOpts = {
+                          "data": data,
+                          "pagination": 10,
+                          "tableDiv": "#table",
+                          "filterDiv": "#table-filter",
+                          "templateID": "table-templ"
+                          }
+        Sheetsee.makeTable(tableOpts)
+        Sheetsee.initiateFilter(tableOpts)
       }
     </script>
   </body>

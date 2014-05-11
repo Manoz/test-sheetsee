@@ -24,10 +24,10 @@
         </th>
         <tbody>
           <tr>
-            <td>DATE</td>
-            <td>USERNAME</td>
-            <td>TWEET</td>
-            <td>LINK</td>
+            <td>{{DATE}}</td>
+            <td>{{USERNAME}}</td>
+            <td>{{TWEET}}</td>
+            <td>{{LINK}}</td>
           </tr>
         </tbody>
       </table>
@@ -36,7 +36,7 @@
     <!-- JavaScript -->
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
-          var URL = "1ftYnYB5_KnKkr43-SIwWrw0HUrsQjWUgq3r7EcilhDY"
+          var URL = "https://docs.google.com/spreadsheets/d/1ftYnYB5_KnKkr43-SIwWrw0HUrsQjWUgq3r7EcilhDY/pubhtml"
           Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
       })
       function myData(data) {
